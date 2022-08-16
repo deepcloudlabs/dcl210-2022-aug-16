@@ -47,7 +47,7 @@ public class Exercise01 {
 		// New Language Features
 		// 1. Interface related new features
 		//    a) Functional Interface -> @FunctionalInterface
-		//    b) static method -> fp utility method
+		//    b) static method -> FP utility function
 		//    c) default method -> FP -> Stream API (Java SE 8) -> Collection API
 		// 2. Lambda Expression
 		// 3. Method Reference
