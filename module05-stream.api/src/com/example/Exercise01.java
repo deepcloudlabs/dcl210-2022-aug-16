@@ -2,13 +2,13 @@ package com.example;
 
 import java.util.LinkedList;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 import com.example.dao.InMemoryWorldDao;
 import com.example.domain.Country;
 
 public class Exercise01 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// Stream API (processing) -> Collection API (storage)
 		// Paradigms           : Functional Programming + OOP
