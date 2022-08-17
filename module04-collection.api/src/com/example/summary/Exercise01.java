@@ -5,7 +5,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
 import java.util.Vector;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedDeque;
+import java.util.concurrent.ConcurrentSkipListSet;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.LinkedBlockingDeque;
 
@@ -25,7 +27,7 @@ public class Exercise01 {
         //                   access: iterator pattern
 		// Linear     : Set, List, Deque -> stores only values
 		// Associative: Map -> Entry (key -> value), There is NO multi-map
-		// Set: unordered, unique
+		// Set: unordered -> unsorted, unique
 		// List: ordered, duplicate, can grow in one direction
 		// Deque: ordered, duplicate, can grow in either direction
 		//        stack, queue
@@ -46,10 +48,18 @@ public class Exercise01 {
 		// 2. ConcurrentXYZ, BlockingXYZ
 		ConcurrentLinkedDeque<Integer> list2; // high throughput wrt # of cores
 		LinkedBlockingDeque<Integer> list3;
+		ConcurrentHashMap<String, Integer> map1; // multi-core > 10
+		ConcurrentSkipListSet<Integer> set1;
 		// 3. Read Heavy -> CopyOnWrite
 		CopyOnWriteArrayList<Integer> list4;
 		// 4. Immutable Collection when there is no mutators!
 		List.of(1,2,3).clear(); // UnsupportedOperationException -> bug
+		
+		// Implementation
+		// 1. List -> ArrayList, LinkedList
+		//            new ArrayList<>(50_000_000);
+		// 2. Set -> HashSet (chaotic), LinkedHashSet (insertion order), TreeSet (Comparator/Comparable), EnumSet
+		// 3. Map -> HashMap, LinkedHashMap, TreeMap, IdentityHashMap, EnumMap
 		
 	}
 
