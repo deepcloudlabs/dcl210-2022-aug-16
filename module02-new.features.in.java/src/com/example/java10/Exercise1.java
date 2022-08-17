@@ -6,6 +6,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unused")
 public class Exercise1 {
     // Error: var z = 42; // since z is an instance variable
 	/**
