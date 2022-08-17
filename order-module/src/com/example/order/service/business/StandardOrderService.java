@@ -8,7 +8,7 @@ import com.example.order.dto.OrderRequest;
 import com.example.order.service.OrderService;
 import com.example.product.service.ProductService;
 
-public class StandrdOrderService implements OrderService {
+public class StandardOrderService implements OrderService {
 	// dependency
 	private CustomerService customerService;
 	private ProductService productService;
