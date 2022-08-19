@@ -24,6 +24,7 @@ public class Exercise01 {
 		// 2. Synchronizers (Cyclic Barrier, Count-Down Latch, ...)
 		// 3. Re-entrant ReadWrite Lock, Spin Lock, Stamp Lock, Atomic(Integer/Long/Reference,...) variables
 		//    synchronized, volatile, ...
+		//     
 	}
 
 }
